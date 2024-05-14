@@ -22,12 +22,12 @@ Then, build the docker image with `./ida.sh build`.
 
 You can start a new container from the pre-built image with `./ida.sh run`
 
-I couldn't get docker to ignore the *errors* (that can be safely ignored) thrown by `wine`. So, if first time usage, run:
+I couldn't get docker to ignore the *errors* (that can be safely ignored) thrown by `wine`. So, if first time usage, connect to the container with `./ida.sh shell` and run:
 
 ```bash
-$ winetricks --force dotnet452 corefonts
-$ WINEARCH=win64 winetricks -q win10
-$ wine wine /root/python-3.10.0-amd64.exe /quiet InstallAllUsers=1 PrependPath=1
+# winetricks --force dotnet452 corefonts
+# WINEARCH=win64 winetricks -q win10
+# wine wine /root/python-3.10.0-amd64.exe /quiet InstallAllUsers=1 PrependPath=1
 ```
 
 You can stop the container with `./ida.sh stop` and start a new container with `./ida.sh start` (without re-deploying from the docker image).
