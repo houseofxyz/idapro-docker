@@ -43,7 +43,7 @@ You can run IDA with `./ida.sh ida` or `./ida.sh ida64`.
 - Tested with IDA Pro 8.4
 - Ensure that the Python version you are running on Windows matches with the Python version that's downloaded via the `Dockerfile` and installed (manually) with `wine`. If you use `wine idapyswitch.exe`, IDA will crash every time you launch it (no idea why).
 
-IDA should set a `regedit` `Python3TargetDLL` `key` for you. However, if when you launch IDA you receive a `WARNING` stating *Python3 is not configured (Python3TragetDLL value is not set)* run `wine regedit` and add a `Python3TargetDLL` (`REG_SZ`) value at `HKEY_CURRENT_USER\Software\Hex-Rays\IDA`. For a current **Python 3.10.x** you should set it to the value `C:\Program Files\Python310\python3.dll`. After a restart, IDA should pick up on it.
+IDA should set a `regedit` `Python3TargetDLL` `key` for you. However, if when you launch IDA you receive a `WARNING` stating *Python3 is not configured (Python3TargetDLL value is not set)* run `wine regedit` and add a `Python3TargetDLL` (`REG_SZ`) value at `HKEY_CURRENT_USER\Software\Hex-Rays\IDA`. For a current **Python 3.10.x** you should set it to the value `C:\Program Files\Python310\python3.dll`. After a restart, IDA should pick up on it.
 
 ## References
 
