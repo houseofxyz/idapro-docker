@@ -22,7 +22,7 @@ Then, build the docker image with `./ida.sh build`.
 
 You can start a new container from the pre-built image with `./ida.sh run`
 
-You couldn't get docker to ignore the *errors* (that can be safely ignored) thrown by `wine`. So, if first time usage, run:
+I couldn't get docker to ignore the *errors* (that can be safely ignored) thrown by `wine`. So, if first time usage, run:
 
 ```bash
 $ winetricks --force dotnet452 corefonts
