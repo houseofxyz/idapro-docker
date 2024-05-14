@@ -34,7 +34,9 @@ You can stop the container with `./ida.sh stop` and start a new container with `
 
 You can run IDA with `./ida.sh ida` or `./ida.sh ida64`.
 
-If you need a shell on the container you can use `./ida.sh shell`. If you need to transfer, and preserve, files between your host and the container use the local `wrkdir` mapped to `/wrkdir` in the container.
+- If you need a shell on the container you can use `./ida.sh shell`.
+- If you need to transfer, and preserve, files between your host and the container use the local `wrkdir` mapped to `/wrkdir` in the container.
+- If you want to start over, use `./ida.sh purge`.
 
 ## Remarks
 
