@@ -27,7 +27,7 @@ I couldn't get docker to ignore the *errors* (that can be safely ignored) thrown
 ```bash
 # winetricks --force dotnet452 corefonts
 # WINEARCH=win64 winetricks -q win10
-# wine wine /root/python-3.10.0-amd64.exe /quiet InstallAllUsers=1 PrependPath=1
+# wine /root/python-3.10.0-amd64.exe /quiet InstallAllUsers=1 PrependPath=1
 ```
 
 You can stop the container with `./ida.sh stop` and start a new container with `./ida.sh start` (without re-deploying from the docker image).
