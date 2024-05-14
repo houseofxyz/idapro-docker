@@ -1,12 +1,10 @@
 #!/bin/bash
 
-# Check if at least one argument is provided
 if [ $# -eq 0 ]; then
-    echo "Usage: $0 {ida|ida64|build|purge|run|shell|start|stop}"
+    echo "Usage: $0 <ida|ida64|build|purge|run|shell|start|stop>"
     exit 1
 fi
 
-# Define the function for each script
 function ida {
     ssh -p 2222 -o StrictHostKeyChecking=no -o "UserKnownHostsFile /dev/null" -o ForwardX11=yes -o ForwardX11Trusted=yes -X root@localhost wine "IDA/ida.exe"
 }
